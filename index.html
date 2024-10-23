@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior Luxe</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Swiper.js for Sliders -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav>
+        <a href="#home"><div class="logo">Interior Luxe</div></a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section (Slideshow) -->
+  <section id="home" class="hero">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('/img/image1.jpg');">
+          <div class="hero-text">
+            <h1>Transform Your Space</h1>
+            <p>Luxury interior design that reflects your style</p>
+            <a href="#projects" class="btn">Explore Projects</a>
+          </div>
+        </div>
+    
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-us">
+    <h2>About Us</h2>
+    <p>We are a premium interior design firm with years of experience in creating beautiful, functional, and luxurious spaces.</p>
+    <div class="about-images">
+      <img src="/img/team.jpg" alt="Our Team">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-items">
+      <div class="service">
+        <img src="/img/residential.jpg" alt="Residential Design">
+        <h3>Residential Design</h3>
+        <p>Luxury residential designs tailored to your personal style.</p>
+      </div>
+      <div class="service1">
+        <img src="/img/commercial.jpg" alt="Commercial Design">
+        <h3>Commercial Design</h3>
+        <p>Elegant and functional commercial spaces that inspire.</p>
+      </div>
+      <div class="service2">
+        <img src="/img/renovations.jpg" alt="Renovations">
+        <h3>Renovations</h3>
+        <p>Breathing new life into old spaces with modern elegance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Gallery Section -->
+  <section id="projects" class="projects-gallery">
+    <h2>Projects Gallery</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="/img/project1.jpg" alt="Project 1">
+        <p style="font-weight: bold;">Interior Designs done with in 10 Days</p>
+      </div>
+      <div class="gallery-item">
+        <img src="/img/project2.jpg" alt="Project 2">
+        <p style="font-weight: bold;">Master bedrooms done with in 15 Days</p>
+      </div>
+      <div class="gallery-item">
+        <img src="/img/project3.jpg" alt="Project 3">
+        <p style="font-weight: bold;">Kitchen done with in 125 Days</p>
+      </div>
+      <!-- More project items... -->
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="submit-form.php" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
